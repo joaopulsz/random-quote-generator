@@ -26,4 +26,28 @@ h2 {
     font-size: 1.1rem;
     width: 150px;
     height: 40px;
+    margin-bottom: 30px;
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 1000px;
+    height: 300px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.quote {
+    font-size: 2rem;
+    margin: 0px 20px;
+}
+
+.author {
+    font-size: 1.4rem;
+    margin-left: 60%;
 }
