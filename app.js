@@ -20,12 +20,12 @@ const implementQuote = (quote, author) => {
     quoteContainer.append(authorP);
 }
 
-quoteGeneratorBtn.addEventListener('click', () => {
-    // const res = await fetch();
-    // const quoteData = await res.json();
+quoteGeneratorBtn.addEventListener('click', async () => {
+    const res = await fetch(`https://quotes.rest/qod`);
+    const quoteData = await res.json();
 
-    const quote = 'Lorem yadayada yada yadayada yada yadayadayada yada yada yadayada'; //quoteData.quote;
-    const author = 'Mr Gao'; //quoteData.author;
+    const quote = quoteData.contents.quotes[0].quote;
+    const author = quoteData.contents.quotes[0].author;
 
     implementQuote(quote, author);
 });
