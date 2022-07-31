@@ -2,6 +2,9 @@ const quoteGeneratorBtn = document.querySelector('#quote-generator-btn');
 const main = document.querySelector('main');
 
 const implementQuote = (quote, author) => {
+    quoteGeneratorBtn.disabled = true;
+    quoteGeneratorBtn.innerText = 'Come back tomorrow for more!';
+
     const quoteContainer = document.createElement('div');
     quoteContainer.setAttribute('class', 'quote-container');
 
